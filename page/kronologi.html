@@ -6,27 +6,41 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Kronologi G30S 1965</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/index.js"></script>
 </head>
 
 <body>
-    <header class="navbar">
+    <nav class="navbar">
         <div class="container">
-            <div class="logo">
-                <div>
-                    <div style="font-size:18px">Sejarah Indonesia</div>
-                    <div style="font-size:12px;color:#6b7280">Kronologi</div>
-                </div>
+            <div>
+                <div style="font-size:18px">Kronologi</div>
+                <div style="font-size:12px;color:#6b7280">Artikel & Kronologi</div>
+            </div>  
+
+            <!-- Menu normal (desktop) -->
+            <div class="nav-links">
+                <a href="../home/artikel.html">Home</a>
+                <a href="../page/sejarah.html">Sejarah</a>
+                <a href="../page/tujuan.html">Tujuan</a>
+                <a href="../page/kronologi.html">Kronologi</a>
             </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../home/artikel.html">Home</a></li>
-                    <li><a href="../page/kronologi.html">Kronologi</a></li>
-                    <li><a href="../page/sejarah.html">Sejarah</a></li>
-                    <li><a href="../page/tujuan.html">Tujuan</a></li>
-                </ul>
-            </nav>
+
+            <!-- Hamburger (mobile) -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Menu dropdown (mobile) -->
+            <div class="nav-links mobile" id="mobileMenu">
+                <a href="../home/artikel.html">Home</a>
+                <a href="../page/sejarah.html">Sejarah</a>
+                <a href="../page/tujuan.html">Tujuan</a>
+                <a href="../page/kronologi.html">Kronologi</a>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <main>
         <div class="main">
