@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,24 +8,22 @@
 
 /* layout */
 body {
-  background: #f7f7f8;
+  background: linear-gradient(50deg, #ffffff, #000000);
   color: #1f2937;
   line-height: 1.6;
   font-size: 16px;
+  min-height: 100vh;
 }
 
 /* navbar */
 .navbar {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.95),
-    rgba(255, 255, 255, 0.9)
-  );
+  background: linear-gradient(50deg, #ffffff, #bebebe);
   box-shadow: 0 2px 6px rgba(16, 24, 40, 0.06);
   position: sticky;
   top: 0;
   z-index: 50;
 }
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -37,20 +34,20 @@ body {
 }
 
 /* Default: desktop */
-.nav-links a{
-  text-decoration:none;
-  color:#1f2937;
-  padding:8px 10px;
-  border-radius:6px;
-  font-weight:600;
+.nav-links a {
+  text-decoration: none;
+  color: #1f2937;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-weight: 600;
 }
-.nav-links a:hover{
-  background:rgba(139,0,0,0.08);
-  color: #8b0000;
+.nav-links a:hover {
+  background: rgba(0, 0, 0, 0.08);
+  color: #ffffff;
 }
 
 .hamburger {
-  display: none; 
+  display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 4px;
@@ -68,12 +65,12 @@ body {
 .nav-links.mobile {
   display: none;
   flex-direction: column;
-  background: #ffffff;
+  background: #8a8787;
   position: absolute;
   top: 64px;
   right: 20px;
   width: 180px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 12px 0;
 }
@@ -89,9 +86,9 @@ body {
 
 /* hero content */
 .hero {
-  background-image: url("../assets/image.png");
+  background-image: url("../assets/5.jpg");
   background-size: cover;
-  padding: 56px 20px;
+  padding: 75px 20px;
   color: #fff;
 }
 
@@ -121,7 +118,7 @@ body {
 }
 .card h2 {
   margin-bottom: 12px;
-  color: #8b0000;
+  color: #303030;
 }
 .meta {
   color: #6b7280;
@@ -161,8 +158,8 @@ body {
 }
 
 .paragraph {
-    margin-top:12px;
-    color: #6b7280;
+  margin-top: 12px;
+  color: #6b7280;
 }
 
 /* responsive */
@@ -179,15 +176,20 @@ body {
   }
 }
 
-@media (max-width:880px){
-  .nav-links {display:none;}   /* menu biasa sembunyi */
-  .hamburger {display:flex;}   /* tombol hamburger muncul */
+@media (max-width: 880px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  } 
 }
 
 .footer {
   margin-top: 40px;
   padding: 20px;
   text-align: center;
-  color: #6b7280;
+  color: #ffffff;
   font-size: 14px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
